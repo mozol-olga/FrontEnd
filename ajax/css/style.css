@@ -1,0 +1,34 @@
+article{
+    margin-top: 5%;
+}
+
+#area div{
+    width: 500px;
+    height: 50px;
+    background-color: rgb(129, 161, 250);
+    overflow: auto;
+    font-size: 10pt;
+}
+
+#area4{
+    width: 500px;
+    height: 550px;
+    background-color: #f1bee6;
+    font-size: 15px;
+    overflow: auto;
+    padding: 15px;
+}
+
+td{
+    text-align: left;
+}
+
+.btn{
+    display: none;
+    background-color: #67ee72;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 2px;
+    width: 120px;
+}
+
