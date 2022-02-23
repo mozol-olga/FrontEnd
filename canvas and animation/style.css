@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+}
+
+img {
+   position: absolute;
+}
+
+.trashCan{
+    position: absolute;
+    width: 200px;
+    height: 900px;
+    left: 80%;
+    background: url(images/close.jpg) no-repeat;
+    background-size:100%;
+}
+
+.open{
+    background: url(images/open.jpg) no-repeat;
+    background-size:100%;
+    width: 200px;
+    height: 900px;
+}
