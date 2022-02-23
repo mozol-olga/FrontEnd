@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 7 trash</title>
+    <script src="script/trash.js"></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <a href="index.html">Рисуночки</a>
+    <div class="trashCan"></div>
+    <div>
+        <img src="images/trash.jpg" width="100" height="100" name="tr">
+        <img src="images/trash.jpg" width="100" height="100" name="tr">
+        <img src="images/trash.jpg" width="100" height="100" name="tr">
+        <img src="images/trash.jpg" width="100" height="100" name="tr">
+        <img src="images/trash.jpg" width="100" height="100" name="tr">
+        <img src="images/trash.jpg" width="100" height="100" name="tr">
+    </div>
+<script>
+Moving.onDragEnd = function (draggableElement, trashCan) {
+            trashCan.classList.add('open');
+            setTimeout(function () {
+                trashCan.classList.remove('open');
+                draggableElement.elem.style.display = 'none';
+            }, 180);
+        };
+//random placement of garbage
+var img = document.getElementsByName('tr'),
+    i = 0,
+    max = img.length,
+    left,
+    top,
+    bottom,
+    right;
+
+for (; i < max; i += 1) {
+    left = Math.round(Math.random() * (document.body.offsetWidth - 500))  + 'px'; 
+    top = Math.round(Math.random() * (document.body.offsetHeight - 50))  + 'px';
+    bottom = Math.round(Math.random() * (document.body.offsetHeight - 50))  + 'px'; 
+    right = Math.round(Math.random() * (document.body.offsetWidth - 200))  + 'px'; 
+
+    img[i].style.left = left;
+    img[i].style.top = top;
+    img[i].style.bottom = bottom;
+    img[i].style.right = right;
+}
+</script>
+</body>
