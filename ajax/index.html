@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>task 8</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <article>
+        <div id="area">
+            <table>
+           <td> <div class="file" id="file1"></div></td>
+           <td><div class="file" id="file2"></div></td> 
+            <td><div class="file" id="file3"></div></td>
+            </table>
+        </div>
+        <table> 
+            <td><div id="area4"></div></td>
+            <td>
+        <div class="eventEdit">
+                <h2>Редактировние события</h2>
+           <div>
+                <div>
+                    <form name="editForm">
+                        <table>
+                        <tr>
+                        <div class="form-control">
+                            <td>Дата события:</td>
+                            <td><input type="date" name="date" id="ed-date"></td>
+                        </div>
+                        </tr>
+                        <tr>
+                        <div class="form-control">
+                            <td>Время события:</td><td><input type="time" name="time" id="ed-time"></td>
+                        </div>
+                        </tr>
+                        <tr>
+                        <div class="form-control">
+                            <td>Наименование события:</td><td><input type="text" name="name" id="ed-name"></td>
+                        </div>
+                        </tr>
+                        <tr>
+                        <div class="form-control">
+                            <td>Степень важности:</td><td><input type="text" name="importance" id="ed-importance"></td>
+                        </div>
+                        </tr>
+                        <tr>
+                        <div class="form-control">
+                            <td>Примечание:</td><td><input type="text" name="note" id="ed-note"></td>
+                        </div>
+                        </tr>
+                        <td>
+                        <div class="edit">
+                            <div class="select-file">
+                                <select id="file-ed" name="file">
+                                    <option disabled selected hidden value>Выбор файла</option>
+                                    <option value="file[1].json">file[1].json</option>
+                                    <option value="file[2].json">file[2].json</option>
+                                    <option value="file[3].json">file[3].json</option>
+                                </select>
+                                <input class="btn" id="edit-btn" value="Редактировать" type="submit"/>
+                            </div>
+                        </div></td>
+                    </table>
+                    </form>
+                </div>
+            </td>
+           </div>
+        </div>
+    </table>
+    </article>
+    <script src="js/fileCrud.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
