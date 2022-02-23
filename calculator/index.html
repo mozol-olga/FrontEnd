@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>TestCalc</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculate.js"></script>
+</head>
+<body>
+    <div class="choose">
+        <p>Целые числа</p>
+        <input type="radio" name="switch" id="integer" onclick="checkNum()" >
+        <p>Вещественные числа</p>
+        <input type="radio" name="switch" id="float" onclick="checkNum()" checked>
+        <p>Без приоритета операций</p>
+        <input type="checkbox" id="priority">       
+    </div>
+      <button id="showHistory" onclick="showHistory()">Посмотреть историю</button>
+      <button id="closeHistory" onclick="closeHistory()">Скрыть историю</button>
+      <textarea id="history" readonly>
+        </textarea >
+    <div class="inputs">
+        <p style="font-size: 14pt;">Выражение:</p>
+        <input type="text" id="original" readonly>
+        <p  style="font-size: 14pt;">Результат:</p>
+        <input type="number" id="result" readonly>
+    </div>
+    <div class="content">
+    <table>
+        <tr>
+          <td><button id="btn" onclick="setValue(1)">1</button></td>
+          <td><button id="btn" onclick="setValue(2)">2</button></td>
+          <td><button id="btn" onclick="setValue(3)">3</button></td>
+          <td><button id="sign" onclick="setValue('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button id="btn" onclick="setValue(4)">4</button></td>
+          <td><button id="btn" onclick="setValue(5)">5</button></td>
+          <td><button id="btn" onclick="setValue(6)">6</button></td>
+          <td><button id="sign" onclick="setValue('-')">-</button></td>
+        </tr>
+        <tr>
+          <td> <button id="btn" onclick="setValue(7)">7</button></td>
+          <td> <button id="btn" onclick="setValue(8)">8</button></td>
+          <td> <button id="btn" onclick="setValue(9)">9</button></td>
+          <td><button id="sign" onclick="setValue('*')">*</button></td>
+        </tr>
+        <tr>
+          <td><button id="clear" onclick="clearInput()">C</button></td>
+          <td><button id="btn" onclick="setValue(0)">0</button></td>
+          <td><button id="calculation" onclick="calculationResult()">=</button></td>
+          <td><button id="sign" onclick="setValue('/')">/</button></td>
+          <td><button onclick="setValue('.')" id="point">.</button></td>
+        </tr>
+      </table>
+    </div>
+</body>
+</html>

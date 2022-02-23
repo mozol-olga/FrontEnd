@@ -1,0 +1,82 @@
+button{
+        width: 100px;
+        height: 100px;
+        
+}
+.content{
+    position: absolute;
+    left: 20%;
+    top: 35%;   
+}
+.choose{
+    padding: 1%;
+}
+#original, #result{
+    width: 238%;
+    height: 30px;
+}
+.inputs{
+    position: absolute;
+    left: 20%;
+    top: 1%
+}
+#point{
+    background: rgb(56, 147, 233);
+    font-size: 30pt;
+}
+#original, #result{
+    grid-column: 1;
+    grid-row: 1;
+    box-shadow: 3px 3px 7px turquoise;
+    font-size: 14pt;
+    height: 40px;
+    width: 170%;
+}
+#btn{
+    background: rgb(0, 0, 0);
+    font-size: 25pt;
+    color: white;
+}
+#sign{
+    background: rgb(121, 119, 119);
+    font-size: 25pt;
+}
+#calculation{
+    background: rgb(21, 161, 8);
+    font-size: 25pt;
+}
+#clear{
+    background: rgb(192, 4, 4);
+    font-size: 25pt;
+}
+#showHistory, #closeHistory{
+    position: absolute;
+    width: 254px;
+    height: 50px;
+    top: 2%;
+    cursor: pointer;
+}
+#closeHistory{
+    left: 77%;
+    background-color: rgb(101, 182, 236)
+}
+#showHistory{
+    left: 60%;
+    background-color: turquoise;
+}
+#history{
+    display : none;
+    position: absolute;
+    width: 508px;
+    height: 550px;
+    left: 60%;
+    top: 10%;
+}
+
+#original:hover{
+    background-color: rgb(101, 182, 236);
+}
+#result:hover{
+    background-color: rgb(99, 236, 152);
+}
+
