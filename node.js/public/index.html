@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Task 9</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      a {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Список студентов</h2>
+    <table class="table-content">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Имя</th>
+          <th>Фамилия</th>
+          <th>Возраст</th>
+          <th>Специальность</th>
+          <th>Действия</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      
+    </table>
+    <form id="form" name="studentForm">
+      <h3>Добавить студента</h3>
+      <table>
+      <input type="hidden" name="id" value="0">
+      <tr>
+        <div class="forma">
+          <td><label for="name">Имя:</label></td> 
+          <td><input class="form-control" type="text" name="name" pattern="[А-Яа-яЁёA-Za-z]{2,25}" required></td> 
+        </div>
+    </tr>
+    <tr>
+        <div class="forma">
+        <td><label for="surname">Фамилия:</label></td> 
+        <td> <input class="form-control" type="text" name="surname" pattern="[А-Яа-яЁёA-Za-z]{2,50}" required> </td>
+        </div>
+      </tr>
+      <tr>
+        <div class="forma">
+          <td><label for="age">Возраст:</label></td>
+          <td><input class="form-control" type="number" min="15" max="75" name="age" step="1" required></td>
+        </div>
+      </tr>
+      <tr>
+        <div class="forma">
+          <td><label for="speciality">Специальность:</label></td>
+          <td><input class="form-control" type="text" name="speciality" pattern="[А-Яа-яЁёA-Za-z]{1,100}" required></td>
+        </div>
+      </tr>
+    </table>
+      <div class="panel-body">
+        <button type="submit" class="btn-save">Сохранить</button>
+        <a id="reset" class="btn-reset">Сбросить</a>
+      </div>
+    </form>
+    <script src="js/script.js"></script>
+  </body>
+</html>
